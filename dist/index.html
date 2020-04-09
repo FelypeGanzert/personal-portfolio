@@ -308,12 +308,17 @@
         <div class="container">
             <h2 class="l-leading">Vamos Conversar!</h2>
             <div class="bottom-line"></div>
-            <form action="">
+            <form action="pages/sucess.html"
+                name="contact-form"
+                method="POST" 
+                data-netlify="true"
+                data-netlify-recaptcha="true">
                 <input type="text" name="name" id="name" placeholder="Nome*" required>
                 <input type="text" name="company" id="company" placeholder="Empresa">
                 <input type="email" name="email" id="email" placeholder="E-mail*" required>
                 <input type="text" name="phone-number" id="phone-number" placeholder="Celular*">
                 <textarea name="message" id="message" placeholder="Mensagem*" required></textarea>
+                <div id="captcha" data-netlify-recaptcha="true"></div>
                 <input type="submit" value="ENVIAR">
             </form>
         </div>

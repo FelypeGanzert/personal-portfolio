@@ -213,6 +213,7 @@ section#contact{
             "email email "
             "phone-number phone-number "
             "message message "
+            "captcha captcha"
             "submit submit "
         ;
         gap: 20px;
@@ -246,6 +247,9 @@ section#contact{
         }
         #message{
             grid-area: message;
+        }
+        #captcha{
+            grid-area: captcha;
         }
         input[type='submit']{
             grid-area: submit;
