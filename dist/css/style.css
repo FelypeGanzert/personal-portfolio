@@ -110,6 +110,24 @@ section#about {
         section#about div.container div.social-links i:hover {
           color: #ffb20a; }
 
+section#knowledges {
+  padding-bottom: 10px; }
+  section#knowledges img {
+    width: 70px; }
+  section#knowledges div.grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: start;
+    gap: 10px; }
+    section#knowledges div.grid div.knowledge-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start; }
+      section#knowledges div.grid div.knowledge-item > * {
+        margin: 10px 0px; }
+
 section#experiences div.work {
   display: flex;
   margin: 30px 0px;

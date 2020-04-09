@@ -1,0 +1,52 @@
+@media (max-width: 900px) {
+  nav#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+    nav#main-nav ul {
+      display: flex;
+      flex-direction: column; }
+      nav#main-nav ul li {
+        padding: 10px 15px; }
+        nav#main-nav ul li a {
+          position: relative; }
+        nav#main-nav ul li:hover a:after {
+          transform: scale(1); }
+  section#about div.container {
+    flex-direction: column; }
+    section#about div.container #profile {
+      margin: 15px 0px; }
+      section#about div.container #profile img {
+        max-width: 300px; }
+  section#knowledges img {
+    width: 80px; }
+  section#knowledges div.grid {
+    grid-template-columns: 1fr; }
+    section#knowledges div.grid div.knowledge-item {
+      border-bottom: #999 dotted 1px; }
+  section#experiences div.work {
+    flex-direction: column;
+    border-bottom: #999 dotted 1px; }
+    section#experiences div.work .logo {
+      margin: 15px 0px; }
+      section#experiences div.work .logo img {
+        width: auto;
+        height: 150px; }
+  section#projects div.project {
+    flex-direction: column; }
+    section#projects div.project h3 {
+      text-align: center; }
+    section#projects div.project div.project-image {
+      margin: 15px 0px; }
+      section#projects div.project div.project-image img {
+        width: auto;
+        height: 300px;
+        transition: all 0.2s ease-in-out; }
+      section#projects div.project div.project-image:hover img {
+        transform: none;
+        box-shadow: #333 2px 2px 5px; } }
