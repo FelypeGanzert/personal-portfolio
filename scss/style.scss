@@ -170,6 +170,11 @@ section#projects {
         display: flex;
         align-items: center;
         border-bottom: $medium-color 1px dotted;
+        transform: translateX(-100vw);
+        transition: transform 0.7s ease-in-out;
+        &.box-enter{
+            transform: translateX(0);
+        }
         &:last-child{
             border-bottom: none;
         }
@@ -227,6 +232,10 @@ section#contact{
         padding: 10px 15px;
         display: block;
         outline: none;
+        border: 1px solid #999;
+        &:focus{
+            border-color: #3792cb;
+        }
     }
 
     form{

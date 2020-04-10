@@ -145,7 +145,11 @@ section#projects div.project {
   padding: 15px 0px;
   display: flex;
   align-items: center;
-  border-bottom: #4c4c4c 1px dotted; }
+  border-bottom: #4c4c4c 1px dotted;
+  transform: translateX(-100vw);
+  transition: transform 0.7s ease-in-out; }
+  section#projects div.project.box-enter {
+    transform: translateX(0); }
   section#projects div.project:last-child {
     border-bottom: none; }
   section#projects div.project div.project-image {
@@ -184,7 +188,10 @@ section#education .education-place, section#education .period {
 section#contact input, section#contact textarea {
   padding: 10px 15px;
   display: block;
-  outline: none; }
+  outline: none;
+  border: 1px solid #999; }
+  section#contact input:focus, section#contact textarea:focus {
+    border-color: #3792cb; }
 
 section#contact form {
   padding: 20px 0px;
