@@ -1,22 +1,4 @@
 @media (max-width: 900px) {
-  nav#main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 15px;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1; }
-    nav#main-nav ul {
-      display: flex;
-      flex-direction: column; }
-      nav#main-nav ul li {
-        padding: 10px 15px; }
-        nav#main-nav ul li a {
-          position: relative; }
-        nav#main-nav ul li:hover a:after {
-          transform: scale(1); }
   section#about div.container {
     flex-direction: column; }
     section#about div.container #profile {
@@ -50,3 +32,76 @@
       section#projects div.project div.project-image:hover img {
         transform: none;
         box-shadow: #333 2px 2px 5px; } }
+
+@media (max-width: 750px) {
+  nav#main-nav div#menu {
+    padding: 0;
+    position: relative;
+    height: 5px;
+    width: 50px;
+    background: #fff;
+    transition: transform 0.4s ease-in-out; }
+    nav#main-nav div#menu:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 5px;
+      top: -10px;
+      background: #fff;
+      z-index: 2;
+      transition: transform 0.4s ease-in-out; }
+    nav#main-nav div#menu:before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 5px;
+      top: 10px;
+      background: #fff;
+      z-index: 2;
+      transition: transform 0.4s ease-in-out; }
+    nav#main-nav div#menu.show {
+      background: none; }
+      nav#main-nav div#menu.show:after {
+        top: 0;
+        transform: rotate(135deg); }
+      nav#main-nav div#menu.show:before {
+        top: 0;
+        transform: rotate(-135deg); }
+      nav#main-nav div#menu.show ul {
+        visibility: visible;
+        transform: scale(1);
+        border-radius: 0; }
+    nav#main-nav div#menu ul {
+      z-index: 1;
+      visibility: hidden;
+      top: 0;
+      left: 0;
+      position: fixed;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #333333f5;
+      width: 100vw;
+      height: 100vh;
+      transform: scale(0);
+      border-radius: 50%;
+      transition: all 0.6s ease-in-out; }
+  section#projects div.project div.project-image img {
+    max-width: 90vw;
+    max-height: 300px; }
+  section#experiences h3.company {
+    text-align: center; }
+  section#contact input, section#contact textarea {
+    padding: 10px 15px;
+    display: block;
+    outline: none;
+    width: 100%;
+    margin: 20px 0px; }
+  section#contact form {
+    padding: 20px 0px;
+    display: block;
+    max-width: 650px; }
+  section#projects div.project div.links a.btn {
+    margin: 10px 5px; }
+  section#education .education-name {
+    text-align: center; } }
