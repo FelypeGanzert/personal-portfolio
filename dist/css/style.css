@@ -28,7 +28,7 @@ div.bottom-line {
   height: 7px;
   width: 100px;
   margin: 0 auto;
-  background: #ffb20a; }
+  background: #085670; }
 
 .container {
   max-width: 1100px;
@@ -45,7 +45,7 @@ section {
   padding: 15px 20px; }
 
 nav#main-nav {
-  background: #333;
+  background: #118AB2;
   color: #f4f4f4;
   display: flex;
   justify-content: space-between;
@@ -72,46 +72,71 @@ nav#main-nav {
           left: 0px;
           width: 100%;
           height: 3px;
-          background: #ffb20a;
+          background: #085670;
           transform: scale(0);
           transition: transform 0.4s ease-in-out; }
       nav#main-nav ul li:hover a:after {
         transform: scale(1); }
 
-section#about {
-  padding-top: 70px;
-  padding-bottom: 70px; }
-  section#about div.container {
+section#main {
+  height: 100vh; }
+  section#main div.container {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; }
-    section#about div.container > div {
+    justify-content: space-around; }
+    section#main div.container div {
       flex: 1; }
-    section#about div.container #profile {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.6rem;
-      text-transform: uppercase; }
-      section#about div.container #profile img {
-        border-radius: 20px;
+    section#main div.container #profile-div {
+      border: #3792cb solid 10px;
+      height: 400px;
+      width: 400px;
+      max-height: 400px;
+      max-width: 400px; }
+      section#main div.container #profile-div #profile-image {
+        transform: translate(30px, -30px);
         width: 100%;
-        max-width: 400px;
-        margin-bottom: 10px; }
-    section#about div.container #about-text {
-      padding: 0 20px; }
-    section#about div.container div.social-links {
-      text-align: center;
-      font-size: 1.7rem; }
-      section#about div.container div.social-links i {
-        display: inline-block;
-        margin: 0px 10px;
-        color: #333; }
-        section#about div.container div.social-links i:hover {
-          color: #ffb20a; }
+        height: 100%;
+        background: url("/dist/img/profile-picture.jpg") no-repeat center center/cover; }
+    section#main div.container #about-text {
+      width: 400px;
+      max-width: 400px;
+      padding: 0 30px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column; }
+      section#main div.container #about-text p:first-of-type {
+        margin: 5; }
+      section#main div.container #about-text h1 {
+        font-size: 3rem; }
+      section#main div.container #about-text div.social-links {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        margin-bottom: 50px; }
+        section#main div.container #about-text div.social-links i {
+          margin: 0px 10px;
+          color: #118AB2; }
+          section#main div.container #about-text div.social-links i:hover {
+            color: #085670; }
+      section#main div.container #about-text div.arrow-bottom {
+        width: 100%;
+        text-align: center;
+        font-size: 3rem; }
+        section#main div.container #about-text div.arrow-bottom i {
+          color: #118AB2;
+          animation: pulse 0.4s ease-in-out infinite;
+          animation-direction: alternate; }
+          section#main div.container #about-text div.arrow-bottom i:hover {
+            color: #085670; }
+
+@keyframes pulse {
+  0% {
+    transform: translate(0px, 0px); }
+  100% {
+    transform: translate(0px, 10px); } }
 
 section#knowledges {
   padding-bottom: 10px; }
@@ -172,11 +197,11 @@ section#projects div.project {
       border-radius: 15px;
       transition: all 0.2s ease-in-out; }
       section#projects div.project div.links a.btn.code {
-        background: #333;
+        background: #118AB2;
         color: #f4f4f4; }
       section#projects div.project div.links a.btn.visit {
-        background: #ffb20a;
-        color: #333;
+        background: #085670;
+        color: #118AB2;
         border-radius: 15px; }
       section#projects div.project div.links a.btn:hover {
         opacity: 0.8; }
@@ -205,7 +230,7 @@ section#contact form {
   margin: 15px auto; }
   section#contact form input[type='submit'] {
     border: none;
-    background: #ffb20a;
+    background: #085670;
     font-weight: bold;
     padding: 15px;
     cursor: pointer;
@@ -230,7 +255,7 @@ section#contact form {
     grid-area: submit; }
 
 footer#main-footer {
-  background: #333;
+  background: #118AB2;
   color: #f4f4f4;
   text-align: center;
   padding: 15px 10px; }

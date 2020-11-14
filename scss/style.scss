@@ -1,7 +1,7 @@
 @import 'reset';
-$primary-color: #f86e51;
-$secondary-color: #ffb20a;
-$dark-color: #333;
+$primary-color: #fff;
+$secondary-color: #085670;
+$dark-color: #118AB2;
 $medium-color: #4c4c4c;
 $light-color: #f4f4f4;
 
@@ -72,49 +72,83 @@ nav#main-nav {
 }
 
 // About section
-section#about{
-    padding-top: 70px;
-    padding-bottom: 70px;
+section#main{
+    height: 100vh;
     div.container {
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
-        > div{
+        justify-content: space-around;
+        div{
             flex: 1; 
         }
-        #profile{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            text-transform: uppercase;
-            img{
-                border-radius: 20px;
+        #profile-div{
+            border: #3792cb solid 10px;
+            height: 400px;
+            width: 400px;
+            max-height: 400px;
+            max-width: 400px;
+            #profile-image{
+                transform: translate(30px, -30px);
                 width: 100%;
-                max-width: 400px;
-                margin-bottom: 10px;
+                height: 100%;
+                background: url('/dist/img/profile-picture.jpg') no-repeat center center /cover;
             }
         }
         #about-text{
-            padding: 0 20px;
-        }
-        div.social-links{
-            text-align: center;
-            font-size: 1.7rem;
-            i{
-                display: inline-block;
-                margin: 0px 10px;
-                color: $dark-color;
-                &:hover{
-                    color: $secondary-color;
+            width: 400px;
+            max-width: 400px;
+            padding: 0 30px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            p:first-of-type{
+                margin: 5;
+            }
+            h1{
+                font-size: 3rem;
+            }
+            div.social-links{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 3rem;
+                margin-bottom: 50px;
+                i{
+                    margin: 0px 10px;
+                    color: $dark-color;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+            }
+            div.arrow-bottom{
+                width: 100%;
+                text-align: center;
+                font-size: 3rem;
+                i{
+                    color: $dark-color;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                    animation: pulse 0.4s ease-in-out infinite;
+                    animation-direction: alternate;
                 }
             }
         }
+        
     }
 }
+
+@keyframes pulse {
+    0%{
+      transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(0px, 10px);
+    }
+  }
 
 // knowledges section
 section#knowledges{
