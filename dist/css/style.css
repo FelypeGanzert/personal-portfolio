@@ -195,43 +195,47 @@ section#experiences div.work {
     display: block;
     color: #4c4c4c; }
 
-section#projects div.project {
-  margin: 20px 0px;
-  padding: 15px 0px;
-  display: flex;
-  align-items: center;
-  border-bottom: #4c4c4c 1px dotted;
-  transform: translateX(-100vw);
-  transition: transform 0.7s ease-in-out; }
-  section#projects div.project.box-enter {
-    transform: translateX(0); }
-  section#projects div.project:last-child {
-    border-bottom: none; }
-  section#projects div.project div.project-image {
-    margin: 0px 15px; }
-    section#projects div.project div.project-image img {
-      width: 400px;
-      border-radius: 20px;
-      transition: transform 0.4s ease-in-out; }
-    section#projects div.project div.project-image:hover img {
-      transform: scale(1.2); }
-  section#projects div.project .techs {
-    color: #4c4c4c; }
-  section#projects div.project div.links {
-    text-align: center; }
-    section#projects div.project div.links a.btn {
-      margin: 0px 10px;
-      border-radius: 15px;
-      transition: all 0.2s ease-in-out; }
-      section#projects div.project div.links a.btn.code {
-        background: #118AB2;
-        color: #f4f4f4; }
-      section#projects div.project div.links a.btn.visit {
-        background: #085670;
-        color: #118AB2;
-        border-radius: 15px; }
-      section#projects div.project div.links a.btn:hover {
-        opacity: 0.8; }
+section#projects {
+  background: #F3F5FA; }
+  section#projects div.project {
+    margin: 20px 0px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: #4c4c4c 0px 0px 5px;
+    transform: translateX(-100vw);
+    transition: transform 0.7s ease-in-out; }
+    section#projects div.project.box-enter {
+      transform: translateX(0); }
+    section#projects div.project:last-child {
+      border-bottom: none; }
+    section#projects div.project div.project-image {
+      margin: 0px 15px; }
+      section#projects div.project div.project-image img {
+        width: 300px;
+        border-radius: 20px;
+        transition: box-shadow 0.3s ease-in-out; }
+      section#projects div.project div.project-image:hover img {
+        box-shadow: #333 2px 2px 5px; }
+    section#projects div.project .techs {
+      color: #4c4c4c; }
+    section#projects div.project div.links {
+      text-align: center; }
+      section#projects div.project div.links a.btn {
+        margin: 0px 10px;
+        border-radius: 15px;
+        transition: all 0.2s ease-in-out; }
+        section#projects div.project div.links a.btn.code {
+          background: #333;
+          color: #f4f4f4; }
+        section#projects div.project div.links a.btn.visit {
+          background: #118AB2;
+          color: #fff;
+          border-radius: 15px; }
+        section#projects div.project div.links a.btn:hover {
+          opacity: 0.8; }
 
 section#education .education-item {
   padding: 15px 0px; }

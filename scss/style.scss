@@ -233,13 +233,15 @@ section#experiences {
 
 // Projects Session
 section#projects {
-
+    background: #F3F5FA;
     div.project {
         margin: 20px 0px;
-        padding: 15px 0px;
+        padding: 20px;
         display: flex;
         align-items: center;
-        border-bottom: $medium-color 1px dotted;
+        background: #fff;
+        border-radius: 30px;
+        box-shadow: $medium-color 0px 0px 5px;
         transform: translateX(-100vw);
         transition: transform 0.7s ease-in-out;
         &.box-enter{
@@ -251,12 +253,12 @@ section#projects {
         div.project-image{
             margin: 0px 15px;
             img{
-                width: 400px;
+                width: 300px;
                 border-radius: 20px;
-                transition: transform 0.4s ease-in-out;
+                transition: box-shadow 0.3s ease-in-out;
             }
             &:hover img{
-                transform: scale(1.2);
+                box-shadow: #333 2px 2px 5px;
             }
         }
         .techs{
@@ -269,12 +271,12 @@ section#projects {
                 border-radius: 15px;
                 transition: all 0.2s ease-in-out;
                 &.code{
-                    background: $dark-color;
+                    background: #333;
                     color: $light-color;
                 }
                 &.visit{
-                    background: $secondary-color;
-                    color: $dark-color;
+                    background: $dark-color;
+                    color: #fff;
                     border-radius: 15px;
                 }
                 &:hover{
