@@ -239,7 +239,7 @@ section#projects {
 
 section#education .container {
   display: flex;
-  padding-top: 20px 0px; }
+  padding-top: 25px; }
 
 section#education .education-item {
   flex: 1;
@@ -265,8 +265,9 @@ section#contact form {
   max-width: 650px;
   margin: 15px auto; }
   section#contact form input[type='submit'] {
+    color: #fff;
     border: none;
-    background: #085670;
+    background: #118AB2;
     font-weight: bold;
     padding: 15px;
     cursor: pointer;
@@ -274,7 +275,9 @@ section#contact form {
     section#contact form input[type='submit']:hover {
       opacity: 0.9; }
   section#contact form textarea {
-    height: 100px; }
+    min-height: 50px;
+    height: 100px;
+    resize: vertical; }
   section#contact form #name {
     grid-area: name; }
   section#contact form #comapny {
