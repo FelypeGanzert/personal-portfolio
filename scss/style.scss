@@ -4,13 +4,12 @@ $secondary-color: #085670;
 $dark-color: #118AB2;
 $medium-color: #4c4c4c;
 $light-color: #f4f4f4;
-
 // Utilites
 div.bottom-line{
     height: 7px;
     width: 100px;
     margin: 0 auto;
-    background: $secondary-color;
+    background: $dark-color;
 }
 .container{
     max-width: 1100px;
@@ -32,9 +31,6 @@ section{
 nav#main-nav {
     background: $dark-color;
     color: $light-color;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 5px 15px;
     position: sticky;
     top: 0;
@@ -48,6 +44,7 @@ nav#main-nav {
     }
     ul{
         display: flex;
+        justify-content: flex-end;
         li{
             padding: 10px 15px;
             a{
@@ -116,7 +113,7 @@ section#main{
                 font-size: 3rem;
                 margin-bottom: 50px;
                 i{
-                    margin: 0px 10px;
+                    margin: 0px 20px;
                     color: $dark-color;
                     &:hover{
                         color: $secondary-color;
@@ -150,26 +147,63 @@ section#main{
     }
   }
 
+// about section
+section#about{
+        height: 100vh;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        > div{
+            flex: 1;
+        }
+        div:first-child{
+            .bottom-line{
+                margin-bottom: 50px;
+            }
+            padding: 0px 30px;
+        }
+        div#about-image{
+            width: 100%;
+            min-height: 100%;
+            background: url("../img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg") no-repeat center center /cover;
+        }
+}
+
+
 // knowledges section
 section#knowledges{
-    padding-bottom: 10px;
-    img{
-        width: 70px;
-    }
-    div.grid{
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: start;
-        gap: 10px;
-        div.knowledge-item{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: start;
-            > *{
-                margin: 10px 0px;
+    padding: 30px 20px;
+    .container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        > div{
+            flex: 1;
+        }
+        div.grid{
+            height: 80%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            gap: 40px;
+            img{
+                width: 80px;
+                height: auto;
+                filter: grayscale(1);
+                transition: filter 0.3s ease-in-out;
+                &:hover{
+                    filter: grayscale(0);
+                }
             }
+        }
+        div.knowledge-text{
+            .bottom-line{
+                margin-bottom: 50px;
+            }
+            padding: 0px 10px;
+            max-width: 550px;
         }
     }
 }
@@ -177,7 +211,6 @@ section#knowledges{
 
 // Experiences section
 section#experiences {
-
     div.work {
         display: flex;
         margin: 30px 0px;

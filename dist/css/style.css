@@ -28,7 +28,7 @@ div.bottom-line {
   height: 7px;
   width: 100px;
   margin: 0 auto;
-  background: #085670; }
+  background: #118AB2; }
 
 .container {
   max-width: 1100px;
@@ -47,9 +47,6 @@ section {
 nav#main-nav {
   background: #118AB2;
   color: #f4f4f4;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 5px 15px;
   position: sticky;
   top: 0;
@@ -60,7 +57,8 @@ nav#main-nav {
   nav#main-nav h1 {
     margin: 0; }
   nav#main-nav ul {
-    display: flex; }
+    display: flex;
+    justify-content: flex-end; }
     nav#main-nav ul li {
       padding: 10px 15px; }
       nav#main-nav ul li a {
@@ -117,7 +115,7 @@ section#main {
         font-size: 3rem;
         margin-bottom: 50px; }
         section#main div.container #about-text div.social-links i {
-          margin: 0px 10px;
+          margin: 0px 20px;
           color: #118AB2; }
           section#main div.container #about-text div.social-links i:hover {
             color: #085670; }
@@ -138,23 +136,50 @@ section#main {
   100% {
     transform: translate(0px, 10px); } }
 
+section#about {
+  height: 100vh;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  section#about > div {
+    flex: 1; }
+  section#about div:first-child {
+    padding: 0px 30px; }
+    section#about div:first-child .bottom-line {
+      margin-bottom: 50px; }
+  section#about div#about-image {
+    width: 100%;
+    min-height: 100%;
+    background: url("../img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg") no-repeat center center/cover; }
+
 section#knowledges {
-  padding-bottom: 10px; }
-  section#knowledges img {
-    width: 70px; }
-  section#knowledges div.grid {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: start;
-    gap: 10px; }
-    section#knowledges div.grid div.knowledge-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: start; }
-      section#knowledges div.grid div.knowledge-item > * {
-        margin: 10px 0px; }
+  padding: 30px 20px; }
+  section#knowledges .container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    section#knowledges .container > div {
+      flex: 1; }
+    section#knowledges .container div.grid {
+      height: 80%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+      gap: 40px; }
+      section#knowledges .container div.grid img {
+        width: 80px;
+        height: auto;
+        filter: grayscale(1);
+        transition: filter 0.3s ease-in-out; }
+        section#knowledges .container div.grid img:hover {
+          filter: grayscale(0); }
+    section#knowledges .container div.knowledge-text {
+      padding: 0px 10px;
+      max-width: 550px; }
+      section#knowledges .container div.knowledge-text .bottom-line {
+        margin-bottom: 50px; }
 
 section#experiences div.work {
   display: flex;
