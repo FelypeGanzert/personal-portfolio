@@ -13,7 +13,8 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 10px; }
 
 p {
-  margin: 10px 0px; }
+  margin: 10px 0px;
+  text-align: justify; }
 
 ul {
   list-style: none; }
@@ -159,8 +160,9 @@ section#knowledges {
     display: flex;
     align-items: center;
     justify-content: space-around; }
-    section#knowledges .container > div {
-      flex: 1; }
+    section#knowledges .container div {
+      flex: 1;
+      padding: 0px 20px; }
     section#knowledges .container div.grid {
       height: 80%;
       display: grid;
@@ -175,7 +177,6 @@ section#knowledges {
         section#knowledges .container div.grid img:hover {
           filter: grayscale(0); }
     section#knowledges .container div.knowledge-text {
-      padding: 0px 10px;
       max-width: 550px; }
       section#knowledges .container div.knowledge-text .bottom-line {
         margin-bottom: 50px; }

@@ -1,37 +1,25 @@
-@media (max-width: 900px) {
-  section#about div.container {
-    flex-direction: column; }
-    section#about div.container #profile {
-      margin: 15px 0px; }
-      section#about div.container #profile img {
-        max-width: 300px; }
-  section#knowledges img {
-    width: 80px; }
-  section#knowledges div.grid {
-    grid-template-columns: 1fr; }
-    section#knowledges div.grid div.knowledge-item {
-      border-bottom: #999 dotted 1px; }
-  section#experiences div.work {
-    flex-direction: column;
-    border-bottom: #999 dotted 1px; }
-    section#experiences div.work .logo {
-      margin: 15px 0px; }
-      section#experiences div.work .logo img {
-        width: auto;
-        height: 150px; }
-  section#projects div.project {
-    flex-direction: column; }
-    section#projects div.project h3 {
-      text-align: center; }
-    section#projects div.project div.project-image {
-      margin: 15px 0px; }
-      section#projects div.project div.project-image img {
-        width: auto;
-        height: 300px;
-        transition: all 0.2s ease-in-out; }
-      section#projects div.project div.project-image:hover img {
-        transform: none;
-        box-shadow: #333 2px 2px 5px; } }
+@media (max-width: 950px) {
+  section#main div.container div#profile-div {
+    max-width: 250px;
+    height: 400px; }
+  section#about p {
+    width: 140%;
+    transform: translate(10px, 0px);
+    background: #fff;
+    padding: 10px; }
+  section#knowledges .container div {
+    padding: 0px 15px; }
+  section#knowledges .container div.grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; }
+    section#knowledges .container div.grid img {
+      width: 90px; }
+  section#experiences div.work .logo img {
+    width: 200px; }
+  section#projects div.project div.project-image {
+    margin: 0px 10px; }
+    section#projects div.project div.project-image img {
+      width: 250px; } }
 
 @media (max-width: 750px) {
   nav#main-nav div#menu {

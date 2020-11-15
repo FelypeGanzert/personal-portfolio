@@ -1,63 +1,58 @@
-@media(max-width: 900px){
+@media(max-width: 950px){
+    // About section
+    section#main{
+        div.container{
+            div#profile-div{
+                max-width: 250px;
+                height: 400px;
+            }
+
+        }
+    }
+
     // About section
     section#about{
-        div.container{
-            flex-direction: column;
-            
-            #profile{
-                margin: 15px 0px;
-                img{
-                    max-width: 300px;
-                }        
-            }
-        }
+       p{
+           width: 140%;
+           transform: translate(10px, 0px);
+           background: #fff;
+           padding: 10px;
+       }
     }
 
     //  knowledges section
     section#knowledges{
-        img{
-            width: 80px;
-        }
-        div.grid{
-            grid-template-columns: 1fr;
-            div.knowledge-item{
-                border-bottom: #999 dotted 1px;
+        .container{
+            div{
+                padding: 0px 15px;
             }
-        }
-    }
-
-    // Experiences section
-    section#experiences {
-        div.work {
-            flex-direction: column;
-            border-bottom: #999 dotted 1px;
-            .logo{
-                margin: 15px 0px;
+            div.grid{
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
                 img{
-                    width: auto;
-                    height: 150px;
+                    width: 90px;
                 }
             }
         }
     }
 
     // Projects Session
+    section#experiences {
+        div.work {
+            .logo{
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+
     section#projects {
         div.project {
-            flex-direction: column;
-            h3{
-                text-align: center;
-            }
             div.project-image{
-                margin: 15px 0px;
+                margin: 0px 10px;
                 img{
-                    width: auto;
-                    height: 300px;
-                    transition: all 0.2s ease-in-out;
-                }
-                &:hover img{
-                    transform: none;
-                    box-shadow: #333 2px 2px 5px;
+                    width: 250px;
                 }
             }
         }

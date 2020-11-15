@@ -68,7 +68,7 @@ nav#main-nav {
     }
 }
 
-// About section
+// Main section
 section#main{
     height: 100vh;
     div.container {
@@ -179,8 +179,9 @@ section#knowledges{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        > div{
+        div{
             flex: 1;
+            padding: 0px 20px;
         }
         div.grid{
             height: 80%;
@@ -202,7 +203,6 @@ section#knowledges{
             .bottom-line{
                 margin-bottom: 50px;
             }
-            padding: 0px 10px;
             max-width: 550px;
         }
     }
