@@ -289,8 +289,13 @@ section#projects {
 
 // Education session
 section#education{
+    .container{
+        display: flex;
+        padding-top: 20px 0px;
+    }
     .education-item {
-        padding: 15px 0px;
+        flex: 1;
+        padding: 20px;
     }
     .education-place, .period{
         display: block;

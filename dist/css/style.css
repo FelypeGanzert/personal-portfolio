@@ -237,8 +237,13 @@ section#projects {
         section#projects div.project div.links a.btn:hover {
           opacity: 0.8; }
 
+section#education .container {
+  display: flex;
+  padding-top: 20px 0px; }
+
 section#education .education-item {
-  padding: 15px 0px; }
+  flex: 1;
+  padding: 20px; }
 
 section#education .education-place, section#education .period {
   display: block;
