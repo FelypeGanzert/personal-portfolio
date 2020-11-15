@@ -142,12 +142,11 @@ section#about {
   display: flex;
   align-items: center;
   justify-content: space-around; }
-  section#about > div {
-    flex: 1; }
-  section#about div:first-child {
-    padding: 0px 30px; }
-    section#about div:first-child .bottom-line {
-      margin-bottom: 50px; }
+  section#about div {
+    flex: 1;
+    padding: 0px 35px; }
+  section#about div:first-child .bottom-line {
+    margin-bottom: 50px; }
   section#about div#about-image {
     width: 100%;
     min-height: 100%;
@@ -181,14 +180,17 @@ section#knowledges {
       section#knowledges .container div.knowledge-text .bottom-line {
         margin-bottom: 50px; }
 
+section#experiences .container > div.work:last-child {
+  border-top: dotted #cecece 2px; }
+
 section#experiences div.work {
   display: flex;
-  margin: 30px 0px;
+  padding: 35px 0px;
   align-items: center; }
   section#experiences div.work .logo {
     margin-right: 30px; }
     section#experiences div.work .logo img {
-      width: 250px; }
+      width: 350px; }
   section#experiences div.work .office, section#experiences div.work .period {
     display: block;
     color: #4c4c4c; }
@@ -285,5 +287,5 @@ footer#main-footer {
   text-align: center;
   padding: 15px 10px; }
   footer#main-footer i {
-    color: red;
+    color: #fff;
     font-size: 1.3rem; }
