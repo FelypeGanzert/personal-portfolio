@@ -1,5 +1,5 @@
 // Menu
-document.getElementById('menu').addEventListener('click', () => {
+document.getElementById('main-nav').addEventListener('click', () => {
     document.getElementById('menu').classList.toggle('show');
 });
 

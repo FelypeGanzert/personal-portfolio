@@ -22,75 +22,190 @@
       width: 250px; } }
 
 @media (max-width: 750px) {
-  nav#main-nav div#menu {
-    padding: 0;
-    position: relative;
-    height: 5px;
-    width: 50px;
-    background: #fff;
-    transition: transform 0.4s ease-in-out; }
-    nav#main-nav div#menu:after {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 5px;
-      top: -10px;
-      background: #fff;
-      z-index: 2;
-      transition: transform 0.4s ease-in-out; }
-    nav#main-nav div#menu:before {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 5px;
-      top: 10px;
-      background: #fff;
-      z-index: 2;
-      transition: transform 0.4s ease-in-out; }
-    nav#main-nav div#menu.show {
-      background: none; }
-      nav#main-nav div#menu.show:after {
-        top: 0;
-        transform: rotate(135deg); }
-      nav#main-nav div#menu.show:before {
-        top: 0;
-        transform: rotate(-135deg); }
-      nav#main-nav div#menu.show ul {
-        visibility: visible;
-        transform: scale(1);
-        border-radius: 0; }
-    nav#main-nav div#menu ul {
-      z-index: 1;
-      visibility: hidden;
-      top: 0;
-      left: 0;
-      position: fixed;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: #333333f5;
-      width: 100vw;
-      height: 100vh;
-      transform: scale(0);
-      border-radius: 50%;
-      transition: all 0.6s ease-in-out; }
-  section#projects div.project div.project-image img {
+  nav#main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
     height: auto;
-    max-width: 90vw;
-    max-height: 300px; }
-  section#experiences h3.company {
-    text-align: center; }
-  section#contact input, section#contact textarea {
-    padding: 10px 15px;
+    top: 0;
+    right: 0;
+    left: auto;
+    height: 50px;
+    cursor: pointer; }
+    nav#main-nav div#menu {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      height: 5px;
+      width: 50px;
+      background: #fff;
+      transition: transform 0.4s ease-in-out; }
+      nav#main-nav div#menu:after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 5px;
+        top: -10px;
+        background: #fff;
+        z-index: 2;
+        transition: transform 0.4s ease-in-out; }
+      nav#main-nav div#menu:before {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 5px;
+        top: 10px;
+        background: #fff;
+        z-index: 2;
+        transition: transform 0.4s ease-in-out; }
+      nav#main-nav div#menu.show {
+        background: none; }
+        nav#main-nav div#menu.show:after {
+          top: 0;
+          transform: rotate(135deg); }
+        nav#main-nav div#menu.show:before {
+          top: 0;
+          transform: rotate(-135deg); }
+        nav#main-nav div#menu.show ul {
+          visibility: visible;
+          transform: scale(1);
+          border-radius: 0; }
+      nav#main-nav div#menu ul {
+        z-index: 1;
+        visibility: hidden;
+        top: 0;
+        left: 0;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #333333f5;
+        width: 100vw;
+        height: 100vh;
+        transform: scale(0);
+        border-radius: 50%;
+        transition: all 0.6s ease-in-out; }
+  section#main {
+    margin-top: 20px;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: auto; }
+    section#main div.container {
+      flex-direction: column; }
+      section#main div.container div#profile-div {
+        height: 250px;
+        width: 250px;
+        max-height: 250px;
+        max-width: 250px;
+        margin: 0px 0px 15px 0px;
+        border-width: 5px; }
+        section#main div.container div#profile-div #profile-image {
+          transform: translate(25px, -25px); }
+      section#main div.container #about-text {
+        padding: 0px 10px;
+        width: 100%;
+        max-width: auto;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        section#main div.container #about-text p:first-of-type {
+          margin: 0; }
+        section#main div.container #about-text h1 {
+          margin: 0;
+          font-size: 2.4rem; }
+        section#main div.container #about-text div.social-links {
+          font-size: 2.4rem;
+          margin: 10px 0px; }
+          section#main div.container #about-text div.social-links i {
+            margin: 0px 20px; }
+        section#main div.container #about-text div.arrow-bottom {
+          font-size: 2.4rem; }
+  section#about {
+    padding: 30px 20px;
     display: block;
-    outline: none;
-    width: 100%;
-    margin: 20px 0px; }
-  section#contact form {
-    padding: 20px 0px;
-    display: block;
-    max-width: 650px; }
-  section#projects div.project div.links a.btn {
-    margin: 10px 5px; }
-  section#education .education-name {
-    text-align: center; } }
+    height: auto; }
+    section#about div {
+      padding: 0px 20px; }
+    section#about div:first-child .bottom-line {
+      margin-bottom: 30px; }
+    section#about div:first-child p {
+      transform: translate(0px, 0px);
+      width: 100%;
+      padding: 0; }
+    section#about div#about-image {
+      display: none; }
+  section#knowledges {
+    padding: 30px 20px; }
+    section#knowledges .container {
+      min-height: 100vh;
+      flex-direction: column-reverse; }
+      section#knowledges .container div {
+        flex: 1;
+        padding: 0px 0px; }
+      section#knowledges .container div.grid {
+        padding: 20px 0px;
+        height: auto;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 30px; }
+        section#knowledges .container div.grid img {
+          width: 60px;
+          filter: none; }
+          section#knowledges .container div.grid img:hover {
+            filter: none; }
+      section#knowledges .container div.knowledge-text {
+        max-width: 550px; }
+        section#knowledges .container div.knowledge-text .bottom-line {
+          margin-bottom: 30px; }
+  section#experiences {
+    padding: 30px 20px; }
+    section#experiences .bottom-line {
+      margin-bottom: 30px; }
+    section#experiences div.work {
+      flex-direction: column;
+      padding: 20px 0px; }
+      section#experiences div.work .logo {
+        margin-right: 30px; }
+        section#experiences div.work .logo img {
+          width: 200px; }
+      section#experiences div.work h3 {
+        text-align: center; }
+  section#projects {
+    padding: 30px 20px; }
+    section#projects div.project {
+      flex-direction: column;
+      align-items: center; }
+      section#projects div.project div.project-image {
+        padding: 15px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        section#projects div.project div.project-image img {
+          width: 80%;
+          max-width: 500px; }
+  section#education {
+    padding: 30px 20px; }
+    section#education .container {
+      flex-direction: column; }
+      section#education .container .bottom-line {
+        margin-bottom: 30px; }
+    section#education .education-item {
+      border-bottom: dotted #cecece 1px;
+      padding: 15px 0px; }
+      section#education .education-item h3 {
+        text-align: left; }
+  section#contact {
+    padding: 30px 20px; }
+    section#contact input, section#contact textarea {
+      padding: 10px 15px;
+      display: block;
+      outline: none;
+      width: 100%;
+      margin: 20px 0px; }
+    section#contact form {
+      padding: 20px 0px;
+      display: block;
+      max-width: 650px; } }
