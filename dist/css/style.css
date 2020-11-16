@@ -78,7 +78,8 @@ nav#main-nav {
         transform: scale(1); }
 
 section#main {
-  height: 100vh; }
+  height: 100vh;
+  min-height: 500px; }
   section#main div.container {
     height: 100%;
     display: flex;
@@ -139,6 +140,7 @@ section#main {
 
 section#about {
   height: 100vh;
+  min-height: 500px;
   padding: 0px;
   display: flex;
   align-items: center;
@@ -154,9 +156,11 @@ section#about {
     background: url("../img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg") no-repeat center center/cover; }
 
 section#knowledges {
+  height: 100vh;
+  min-height: 500px;
   padding: 30px 20px; }
   section#knowledges .container {
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around; }
