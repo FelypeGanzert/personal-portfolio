@@ -215,8 +215,11 @@ section#knowledges{
 
 // Experiences section
 section#experiences {
+    .container > div.work{
+        border-bottom: dotted #cecece 2px;
+    }
     .container > div.work:last-child{
-        border-top: dotted #cecece 2px;
+        border-top: none;
     }
     div.work {
         display: flex;

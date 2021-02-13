@@ -185,8 +185,11 @@ section#knowledges {
       section#knowledges .container div.knowledge-text .bottom-line {
         margin-bottom: 50px; }
 
+section#experiences .container > div.work {
+  border-bottom: dotted #cecece 2px; }
+
 section#experiences .container > div.work:last-child {
-  border-top: dotted #cecece 2px; }
+  border-top: none; }
 
 section#experiences div.work {
   display: flex;
